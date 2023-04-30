@@ -1,0 +1,105 @@
+.wrapper {
+  // height: 88vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  padding-bottom: 35px;
+  div {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .mainTitle {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 40px;
+        h1 {
+          font-size: 63px;
+          color: #ca9a16;
+          font-weight: 600;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        h2 {
+          font-size: 30px;
+          color: #2e2e2e;
+          font-weight: 600;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          color: #2e2e2e;
+        }
+        .btn {
+          border: none;
+          padding: 10px 44px;
+          font-size: 36px;
+          position: relative;
+          transition: all ease-in-out 0.4s;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          text-decoration: none;
+          &::before {
+            transition: all 0.65s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            content: "";
+            width: 3%;
+            height: 100%;
+            background: #ca9a16;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+          & .text {
+            transition: all ease-in-out 0.65s;
+            color: #2e2e2e;
+            mix-blend-mode: darken;
+            z-index: 1000;
+          }
+          &:hover {
+            & .text {
+              color: #ffffff;
+              mix-blend-mode: hard-light;
+            }
+            &::before {
+              background: #ca9a16;
+              width: 100%;
+            }
+          }
+        }
+        .potok {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .start {
+            padding: 10px;
+            background-color: #b1920752;
+            border-radius: 5px;
+          }
+          .summer {
+            padding: 10px;
+            background-color: #cfa31467;
+            border-radius: 5px;
+          }
+        }
+      }
+      .mainImg {
+        background-image: url("../../images/nigg.jpg");
+        height: 80vh;
+        width: 40%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-fit: contain;
+        background-position: right;
+      }
+    }
+  }
+}
