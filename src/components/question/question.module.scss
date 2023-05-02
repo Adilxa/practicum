@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: all ease-in-out 0.4s;
+  opacity: 1;
+  @include breackpoint(sm) {
+    gap: 20px;
+  }
+  @include breackpoint(xs) {
+    gap: 10px;
+  }
+}

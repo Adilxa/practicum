@@ -12,7 +12,7 @@ const Title = () => {
                             <p>Присоединяйтесь к нашей команде и станьте частью нашей миссии создания инновационных решений для будущего!</p>
                             <div className={scss.potok}>
                                 <div className={scss.summer}>
-                                    <p>Летняя стажировка</p>
+                                    <p> Летняя стажировка</p>
                                 </div>
                                 -
                                 <div className={scss.start}>

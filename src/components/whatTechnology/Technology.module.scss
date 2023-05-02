@@ -1,3 +1,84 @@
+@import "../../styles/variables";
+
 .wrapper {
   background-color: white;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  .title {
+    font-size: 50px;
+  }
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    @include breackpoint(sm) {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      flex-wrap: nowrap;
+      gap: 10px;
+      width: 100%;
+      height: 90vh;
+    }
+    .itemBox {
+      width: 48%;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: rgba(102, 98, 98, 0.048);
+      transition: all ease-in-out 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      @include breackpoint(sm) {
+        width: 100%;
+      }
+
+      &:hover {
+        transition: all ease-in-out 0.4s;
+        -webkit-box-shadow: 1px 4px 28px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 1px 4px 28px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 4px 28px 0px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        font-size: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+        color: #ca9a16;
+        @include breackpoint(sm) {
+          font-size: 25px;
+        }
+        @include breackpoint(xs) {
+          font-size: 20px;
+        }
+        span {
+          img {
+            width: 30px;
+            @include breackpoint(xs) {
+              width: 20px;
+            }
+          }
+        }
+      }
+      p {
+        font-size: 22px;
+        color: #2e2e2e;
+        @include breackpoint(sm) {
+          font-size: 17px;
+          font-weight: 500;
+        }
+        @include breackpoint(xs) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }

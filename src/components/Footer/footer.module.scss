@@ -1,0 +1,122 @@
+@import "../../styles/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: Helvetica, sans-serif;
+  border-top: 120px solid #2e2e2e;
+  border-bottom: 1px solid #2e2e2e;
+  background-color: white;
+  height: 100%;
+  @include breackpoint(xm) {
+    border-top: 0px solid #2e2e2e;
+    overflow: hidden;
+  }
+  @include breackpoint(xs) {
+    border-top: 0px solid #2e2e2e;
+    overflow: hidden;
+  }
+  .render {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 0 39px 0;
+    @include breackpoint(sm) {
+      height: fit-content;
+      flex-direction: column;
+      padding: 15px 0 0 0;
+    }
+    @include breackpoint(xs) {
+      height: fit-content;
+      flex-direction: column;
+      padding: 15px 0 0 0;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      @include breackpoint(sm) {
+        width: 100px;
+      }
+      @include breackpoint(xs) {
+        width: 100px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        color: #2e2e2e;
+        @include breackpoint(sm) {
+          font-size: 14px;
+        }
+        @include breackpoint(xs) {
+          font-size: 14px;
+        }
+      }
+    }
+    .renderItem {
+      margin-top: 9px;
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #2e2e2e;
+      }
+    }
+    .devider {
+      margin: 10px 0 20px 0;
+      height: 1px;
+      width: 110%;
+      background-color: #c0c0c0;
+      @include breackpoint(sm) {
+        margin: 5px 0;
+      }
+      @include breackpoint(xs) {
+        margin: 5px 0;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 20px;
+      @include breackpoint(sm) {
+        gap: 2px;
+      }
+      @include breackpoint(xs) {
+        gap: 2px;
+      }
+      li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: #2e2e2e;
+        @include breackpoint(sm) {
+          font-size: 12px;
+        }
+        @include breackpoint(xs) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.underFooter {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  p {
+    margin: 20.5px 0 20px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: #2e2e2e;
+  }
+}

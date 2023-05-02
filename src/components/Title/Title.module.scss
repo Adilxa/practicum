@@ -1,14 +1,32 @@
+@import "../../styles/variables";
+
 .wrapper {
-  // height: 88vh;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: white;
   padding-bottom: 35px;
+  @include breackpoint(sm) {
+    padding-top: 20px;
+    // height: 100%;
+    min-height: 80%;
+  }
+  @include breackpoint(xs) {
+    padding-top: 10px;
+  }
   div {
     .content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      align-items: flex-start !important;
+      @include breackpoint(sm) {
+        height: 100%;
+        padding-bottom: 50px;
+      }
+      @include breackpoint(xs) {
+        height: 100%;
+        padding-bottom: 0px;
+      }
       .mainTitle {
         width: 55%;
         display: flex;
@@ -16,6 +34,14 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 40px;
+        @include breackpoint(sm) {
+          width: 100%;
+          gap: 50px;
+        }
+        @include breackpoint(xs) {
+          width: 100%;
+          gap: 30px;
+        }
         h1 {
           font-size: 63px;
           color: #ca9a16;
@@ -23,6 +49,12 @@
           background-position: center center;
           border-color: transparent;
           border-style: solid;
+          @include breackpoint(sm) {
+            font-size: 60px;
+          }
+          @include breackpoint(xs) {
+            font-size: 58px;
+          }
         }
         h2 {
           font-size: 30px;
@@ -31,11 +63,20 @@
           background-position: center center;
           border-color: transparent;
           border-style: solid;
+          @include breackpoint(sm) {
+            display: none;
+          }
         }
         p {
           font-size: 20px;
           font-weight: 500;
           color: #2e2e2e;
+          @include breackpoint(sm) {
+            font-size: 22px;
+          }
+          @include breackpoint(xs) {
+            font-size: 20px;
+          }
         }
         .btn {
           border: none;
@@ -46,6 +87,9 @@
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
           text-decoration: none;
+          @include breackpoint(sm) {
+            font-size: 30px;
+          }
           &::before {
             transition: all 0.65s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             content: "";
@@ -92,13 +136,16 @@
         }
       }
       .mainImg {
-        background-image: url("../../images/nigg.jpg");
+        background-image: url("../../../public/images/nigg.jpg");
         height: 80vh;
         width: 40%;
         background-repeat: no-repeat;
         background-size: contain;
         object-fit: contain;
         background-position: right;
+        @include breackpoint(sm) {
+          display: none;
+        }
       }
     }
   }

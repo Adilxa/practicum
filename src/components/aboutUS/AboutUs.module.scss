@@ -1,9 +1,11 @@
+@import "../../styles/variables";
 .wrapper {
   background-color: #2e2e2e;
-  border-radius: 20px;
   display: flex;
   align-items: center;
-  height: 100%;
+  // height: 120%;
+  padding-bottom: 60px;
+
   div {
     h1 {
       font-size: 63px;
@@ -13,6 +15,13 @@
       border-color: transparent;
       border-style: solid;
       margin-bottom: 40px;
+      @include breackpoint(sm) {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      @include breackpoint(xs) {
+        font-size: 40px;
+      }
     }
     .insideWrapper {
       display: flex !important;
@@ -20,10 +29,34 @@
       width: 100%;
       gap: 50px;
       justify-content: space-between;
-
+      @include breackpoint(sm) {
+        flex-direction: column;
+        gap: 20px;
+      }
+      @include breackpoint(xs) {
+        font-size: 50px;
+      }
       .card {
         width: 45%;
-        border-radius: 10px;
+
+        @include breackpoint(sm) {
+          width: 100%;
+          border-bottom: 1px solid #ca9a16;
+          padding-bottom: 10px;
+        }
+        @include breackpoint(xs) {
+          width: 100%;
+          border-bottom: 1px solid #ca9a16;
+          padding-bottom: 5px;
+        }
+        p {
+          @include breackpoint(sm) {
+            font-size: 17px !important;
+          }
+          @include breackpoint(xs) {
+            font-size: 15px !important;
+          }
+        }
         &:nth-child(1) {
           p {
             color: white;
