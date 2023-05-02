@@ -1,11 +1,11 @@
 import React from "react";
 import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation, FullpageCount } from "@ap.cx/react-fullpage";
-import Title from "../../components/Title/Title";
-import Header from "../../components/header/Header";
-import AboutUs from "../../components/aboutUS/AboutUs";
-import Technology from "../../components/whatTechnology/Technology";
-import FeedBack from "../../components/feedBack/FeedBack";
-import Footer from "../../components/Footer/Footer";
+import Title from "../../src/components/Title/Title";
+import Header from "../../src/components/header/Header";
+import AboutUs from "../../src/components/aboutUS/AboutUs";
+import Technology from "../../src/components/whatTechnology/Technology";
+import FeedBack from "../../src/components/feedBack/FeedBack";
+import Footer from "../../src/components/Footer/Footer";
 
 const HomePage = () => {
 
