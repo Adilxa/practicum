@@ -35,10 +35,10 @@
       flex-direction: column;
       width: 150px;
       @include breackpoint(sm) {
-        width: 100px;
+        display: none;
       }
       @include breackpoint(xs) {
-        width: 100px;
+        display: none;
       }
       p {
         font-style: normal;

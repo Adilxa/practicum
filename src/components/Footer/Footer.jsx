@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="container">
                     <div className={styles.render}>
                         <div className={styles.logo}>
-                            {/* <img src="./images/logo.jpg" alt="Logo" /> */}
+                            <img src="./images/logo.jpg" alt="Logo" />
                         </div>
                         {renderFooter}
                     </div>

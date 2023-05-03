@@ -51,6 +51,9 @@
         }
         p {
           @include breackpoint(sm) {
+            font-size: 25px !important;
+          }
+          @include breackpoint(xm) {
             font-size: 17px !important;
           }
           @include breackpoint(xs) {
