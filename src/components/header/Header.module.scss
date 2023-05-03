@@ -8,7 +8,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 2px 5px !important;
+      padding: 2px 5px 0 5px !important;
 
       .navigation {
         display: none !important;
@@ -180,13 +180,16 @@
         }
         a {
           text-decoration: none;
-          color: #2e2e2e;
+          color: #1a151593;
           font-weight: 600;
-          font-size: 20px;
+          font-size: 15px;
           transition: all ease-in-out 0.5s;
           &:hover {
             text-shadow: #fc0 1px 0 20px;
           }
+        }
+        h5 {
+          color: #1a151593;
         }
       }
     }

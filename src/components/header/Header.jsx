@@ -55,10 +55,27 @@ const Header = () => {
                                 <div className={scss.topSide}>
                                     <div className={scss.nav}>
                                         <img src="./images/logo.jpg" alt="logo" />
+                                        <h3 style={{
+                                            borderBottom: "1px solid rgb(34 24 24 / 82%)",
+                                            width: "100%",
+                                            color: "rgb(34 24 24 / 82%)"
+                                        }}>Навигация</h3>
                                         {Nav.map((el, i) => <Link key={`${el.id}_${i}`} onClick={() => setOpenModal(false)} to={`${el.id}`}>{el.title}</Link>)}
-                                        <div style={{ height: "20px" }}></div>
+
+                                        <h3 style={{
+                                            borderBottom: "1px solid rgb(34 24 24 / 82%)",
+                                            width: "100%",
+                                            color: "rgb(34 24 24 / 82%)"
+                                        }}>Социальные сети</h3>
                                         <a href="https://www.instagram.com/solid.practicum.kg/" target="_blank" rel="norefferer">* Instagram</a>
                                         <a href="https://web.telegram.org/k/#2049795564" target="_blank" rel="norefferer">* Telegram</a>
+                                        <h3 style={{
+                                            borderBottom: "1px solid rgb(34 24 24 / 82%)",
+                                            width: "100%",
+                                            color: "rgb(34 24 24 / 82%)"
+                                        }}>Позвони нам</h3>
+                                        <h5>+996 (705) 45 54 66</h5>
+                                        <h5>+996 (500) 35 35 29</h5>
                                     </div>
                                     <a className={scss.order} href="https://forms.gle/5zkTnxdLdMLv4iCL7" target="_blank" rel="norefferer">Записаться</a>
                                 </div>
